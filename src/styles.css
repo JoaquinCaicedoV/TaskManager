@@ -1,0 +1,289 @@
+body {
+  font-family: "IBM Plex Sans Semi Bold", sans-serif;
+  background-color: #fff;
+}
+
+.custom-text-color {
+  color: #096A2E; /* Or any color you prefer */
+}
+.size {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  background-color: #fcf9f5 !important; /* Or any color you prefer for the card background */
+  height: 100%;
+  border-radius: 5%;
+}
+
+.card-body {
+  background-color: #fcf9f5 !important; /* Or any color you prefer for the card background */
+  border-radius: 5%;
+}
+
+.task-col{
+  padding: 1rem;
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #096A2E; /* Or any color you like */
+}
+
+.logo {
+  width: 30%;
+  height: 30%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1199px) {
+  .logo {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media (max-width: 991px) {
+  .logo {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 575px) {
+  .logo {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+.button {
+  background-color: #096A2E; /* Or any color you like */
+  color: #fff; /* Or any color you like */
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.button:hover {
+  background-color: #8ABE53; /* Or any color you like */
+  cursor: pointer;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: 92%;
+  width: 10%;
+  height: 10%;
+  align-self: center;
+}
+.delete-button:active {
+  background: none;
+  border: none;
+}
+
+.trash-icon {
+  font-size: 16px;
+  color: #096A2E; /* Or any purple color you prefer */
+}
+
+.trash-icon:hover {
+  color: #8ABE53; /* Or any purple color you prefer for hover */
+}
+
+.due-style {
+  width: auto;
+}
+
+.delete-selected-tasks-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.action-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.gradient-background {
+  background: linear-gradient(
+    90deg,
+    #096A2E 0%,
+    #8abe53 50%,
+    #fcf9f5 100%
+  );
+}
+.task-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+.task-modal {
+  position: relative;
+  padding: 20px;
+  border-radius: 20%;
+  max-width: 600px;
+  width: 100%;
+}
+
+.create-task-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30%;
+  padding: 15px;
+}
+
+.create-task-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: #096A2E;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4);
+  font-size: 50px;
+  cursor: pointer;
+}
+
+@media (min-width: 458px) {
+  .create-task-btn-wrapper{
+    margin-top: 0%;
+  }
+}
+
+@media (min-width: 768px) {
+  .create-task-btn-wrapper{
+    margin-top: 0%;
+  }
+}
+
+@media (min-width: 992pc) {
+  .create-task-btn-wrapper{
+    margin-top: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .create-task-btn-wrapper{
+    margin-top: 30%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .create-task-btn {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .create-task-btn {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .create-task-btn {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.create-task-btn:hover {
+  background-color: #8ABE53;
+}
+
+
+.detailed-card {
+  background-color: #fcf9f5;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.edit-button {
+  margin-top: 1rem;
+}
+
+
+.content {
+  position: relative;
+  padding: 20px;
+  border-radius: 20%;
+  max-width: 600px;
+  width: 100%;
+  background-color: #fcf9f5;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #f3efe9;
+  transition: background-color 0.3s ease;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 0%);
+  border-top-right-radius: 50%;
+  pointer-events: none;
+}
+
+.checkmark.checked {
+  background-color: #096a2e;
+}
+
+.checkbox-container {
+  position: absolute;
+  top: 0px;
+  border-top-right-radius: 50%;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+}
+
+.checkbox-container:hover {
+  cursor: pointer;
+}
