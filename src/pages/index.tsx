@@ -3,7 +3,6 @@ import TaskModal from '../components/TaskModal';
 import TaskList from '../components/TaskList';
 import { Task, TasksStatusEnum } from '../types/Task';
 import { fetchTasks, createTask, deleteTask, updateTaskStatus } from '../services/taskService';
-import Image from 'next/image';
 
 const App: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -58,7 +57,7 @@ const App: React.FC = () => {
 
   return (
     <div className={mainClass}>
-      <Image src="/images/logoTask.png" alt="Task Manager" className="my-5 mx-auto d-block logo" />
+      <img src="/images/logoTask.png" alt="Task Manager" className="my-5 mx-auto d-block logo"/>
       {selectedTask && (
         <TaskModal
           task={selectedTask}
