@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Task, TasksResponse, TasksStatusEnum } from '../types/Task';
 
-const API_URL = 'http://localhost:8080/api/v1/tasks';
+const API_URL = 'http://3.141.98.165:8080/api/v1/tasks';
 
 export const fetchTasks = async (): Promise<Task[]> => {
   const response = await axios.get<TasksResponse>(API_URL);
